@@ -7,7 +7,7 @@ class Sensor(BaseModel):
 
 app = FastAPI()
 
-model = joblib.load('ICCPDM_5.pkl')
+model = joblib.load('ICCPDM_6.pkl')
 
 @app.post("/predict")
 async def predict(sensor:Sensor):
